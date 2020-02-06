@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import Navigation from './navigation/Navigation';
 
-// import Statistics from "./Statistics/Statistics";
+import Statistics from "./statistics/Statistics";
 import FriendsList from './friends-list/FriendsList';
 // import TransactionHistory from "./TransactionHistory/TransactionHistory";
 
 // import user from "./Profile/user.json";
-// import statisticalData from "./Statistics/statistical-data.json";
+import statisticalData from "./statistics/statistical-data.json";
 import friends from './friends-list/friends.json';
 // import transactions from "./TransactionHistory/transactions.json";
 import './base.scss';
@@ -18,7 +18,7 @@ const App = () => (
     <Navigation tasks={tasks} />
     <div className="container">
       {/* <Profile user={user} /> */}
-      {/* <Statistics title="Upload stats" stats={statisticalData} /> */}
+      <Statistics title="Upload stats" stats={statisticalData} />
       <FriendsList friends={friends} />
       {/* <TransactionHistory items={transactions} /> */}
     </div>
