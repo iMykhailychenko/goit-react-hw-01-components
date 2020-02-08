@@ -1,0 +1,27 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.st_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+   background: rgb(219, 219, 219);
+}

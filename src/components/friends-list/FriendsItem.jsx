@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './FriendsItem.module.scss';
 
 const FriendsItem = ({ friends }) => {
   return (
-    <Fragment>
+    <>
       {friends.map(item => (
         <li key={item.id} className={styles.item}>
           <span
@@ -14,13 +14,11 @@ const FriendsItem = ({ friends }) => {
             className={styles.avatar}
             src={item.avatar}
             alt="avatar"
-            width="70"
-            height="70"
           />
           <p className={styles.name}>{item.name}</p>
         </li>
       ))}
-    </Fragment>
+    </>
   );
 };
 
