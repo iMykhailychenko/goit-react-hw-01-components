@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Profile.module.scss';
 
 const Profile = ({ user }) => {
@@ -22,6 +23,16 @@ const Profile = ({ user }) => {
       </ul>
     </div>
   );
+};
+
+Profile.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.objectOf(PropTypes.number),
+  }),
 };
 
 export default Profile;
